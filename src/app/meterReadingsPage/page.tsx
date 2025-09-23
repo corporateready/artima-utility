@@ -18,11 +18,7 @@ import {
 } from "@/components/ui/select";
 import { useForm } from "react-hook-form";
 import {
-  ClerkProvider,
-  SignInButton,
-  SignUpButton,
   SignedIn,
-  SignedOut,
   UserButton,
 } from '@clerk/nextjs'
 import Link from 'next/link';
