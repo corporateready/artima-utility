@@ -4,7 +4,6 @@ import {
    ClerkProvider,
  } from "@clerk/nextjs";
 import "./globals.css";
-import LogInPage from "@/app/loginPage/page"
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -32,8 +31,6 @@ export default function RootLayout({
         <body
           className={`${geistSans.variable} ${geistMono.variable} antialiased`}
         >
-         
-          {/* <LogInPage /> */}
           {children}
         </body>
       </html>

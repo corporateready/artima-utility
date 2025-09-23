@@ -1,17 +1,12 @@
 import React from 'react'
 import {
-  ClerkProvider,
-  SignInButton,
-  SignUpButton,
   SignedIn,
-  SignedOut,
   UserButton,
 } from '@clerk/nextjs'
 import Link from 'next/link';
 
-type Props = {}
 
-const page = (props: Props) => {
+const page = () => {
   return (
     <div className="w-full h-screen">
       <header className="w-full flex justify-between items-center p-4 gap-4 h-16">
