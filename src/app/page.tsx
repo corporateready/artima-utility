@@ -1,12 +1,27 @@
-import Image from "next/image";
-import { Button } from "@/components/ui/button";
+"use client"
+import React from "react";
+
+ import { useRouter } from 'next/navigation';
+ import { useUser } from '@clerk/nextjs';
+
+ import LoginPage from "@/app/loginPage/page"
 
 export default function Home() {
+  const router = useRouter();
+
+  const {user, isLoaded} = useUser();
+
+  React.useEffect(() => {
+  if(user) {
+    router.push('/navigatePage')
+  }
+  }, [user,isLoaded, router])
+  
   return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-    
-        <h1 className='text-2xl font-bold' >ARTIMA utility</h1>
-     
+    <div className="font-sans flex items-center justify-center w-full h-full min-h-screen">
+
+      <LoginPage />
+      
     </div>
   );
 }
