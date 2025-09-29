@@ -1,9 +1,7 @@
 import React from "react";
 import styles from "./header.mobile.module.scss"
 
-type Props = {};
-
-function index({}: Props) {
+function index() {
   return (
     <header className={styles.header__mobile}>
         <svg

@@ -18,7 +18,6 @@ import {
 } from "@/components/ui/select";
 import { useForm } from "react-hook-form";
 import Header from "@/app/shared/header/index"
-import Link from 'next/link';
 
 const MeterReadingsPage = () => {
   const form = useForm();
