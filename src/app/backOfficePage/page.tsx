@@ -1,8 +1,4 @@
 import React from 'react'
-import {
-  SignedIn,
-  UserButton,
-} from '@clerk/nextjs'
 import Link from 'next/link';
 
 
@@ -11,9 +7,7 @@ const page = () => {
     <div className="w-full h-screen">
       <header className="w-full flex justify-between items-center p-4 gap-4 h-16">
        <Link href={'/navigatePage'}> {"<<"} Go to Navigate Page</Link>
-        <SignedIn>
-          <UserButton />
-        </SignedIn>
+        
       </header>
        <div className='flex flex-col w-full h-full items-center justify-center'>
 

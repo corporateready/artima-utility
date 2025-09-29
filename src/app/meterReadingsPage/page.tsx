@@ -17,23 +17,16 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 import { useForm } from "react-hook-form";
-import {
-  SignedIn,
-  UserButton,
-} from '@clerk/nextjs'
+import Header from "@/app/shared/header/index"
 import Link from 'next/link';
 
 const MeterReadingsPage = () => {
   const form = useForm();
 
   return (
-    <div className="w-full h-screen">
-      <header className="w-full flex justify-between items-center p-4 gap-4 h-16">
-       <Link href={'/navigatePage'}> {"<<"} Go to Navigate Page</Link>
-        <SignedIn>
-          <UserButton />
-        </SignedIn>
-      </header>
+    <div className="w-full h-screen flex flex-col bg-[#f0f0f0]">
+      <Header />
+
        <div className='flex flex-col w-full h-full items-center justify-center'>
       meter readings page
       <Form {...form}>
