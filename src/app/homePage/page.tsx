@@ -7,7 +7,7 @@ function page() {
       <div>
         <Header />
       </div>
-      <p>Home Page</p>
+      {/* <p>Home Page</p> */}
       
     </div>
   )
