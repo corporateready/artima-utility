@@ -5,7 +5,7 @@ import { supabase } from '@/lib/supabase'
 import HeaderMobile from "@/app/shared/header/index"
 import styles from "./login.module.scss"
 
-function page() {
+function Page() {
   const [user, setUser] = useState(null)
   const [loading, setLoading] = useState(true)
 
@@ -291,4 +291,4 @@ function page() {
   );
 }
 
-export default page;
+export default Page;
