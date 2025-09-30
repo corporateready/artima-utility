@@ -5,7 +5,7 @@ import { supabase } from '@/lib/supabase'
 import HeaderMobile from "@/app/shared/header/index"
 import styles from "./login.module.scss"
 
-export default function AuthButton() {
+function page() {
   const [user, setUser] = useState(null)
   const [loading, setLoading] = useState(true)
 
@@ -290,3 +290,5 @@ export default function AuthButton() {
     </div>
   );
 }
+
+export default page;
