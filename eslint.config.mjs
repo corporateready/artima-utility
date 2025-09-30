@@ -26,11 +26,11 @@ const eslintConfig = [
       "@next/next/no-page-custom-font": "off",
     },
   },
-  {
-  eslint: {
-    ignoreDuringBuilds: true,
-  },
-}
+//   {
+//   eslint: {
+//     ignoreDuringBuilds: true,
+//   },
+// }
 ];
 
 export default eslintConfig;
