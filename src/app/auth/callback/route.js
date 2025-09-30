@@ -21,7 +21,7 @@ export async function GET(request) {
         );
       }
 
-      // Успешная авторизация - перенаправляем на главную страницу
+  
       return NextResponse.redirect(`${requestUrl.origin}/`);
     } catch (error) {
       console.error("Неожиданная ошибка:", error);
@@ -31,6 +31,6 @@ export async function GET(request) {
     }
   }
 
-  // Если нет кода - перенаправляем на главную
+  
   return NextResponse.redirect(requestUrl.origin);
 }
