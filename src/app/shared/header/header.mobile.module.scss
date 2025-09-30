@@ -1,0 +1,15 @@
+.header__mobile {
+  @apply flex justify-center pt-[44rem] w-full h-[258rem] relative before:contents before:absolute before:bottom-[-292rem] before:left-[-137rem] before:w-[706rem] before:h-[326rem] before:bg-[#f0f0f0] before:rounded-[50%] overflow-hidden;
+  background: url('/header-bg-mobile.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header__mobile_logo {
+  @apply w-[123rem] h-[143rem];
+
+  @media screen and (min-width: 640px) {
+    @apply absolute top-[-1000rem];
+  }
+}

@@ -1,15 +1,7 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  // async redirects() {
-  //   return [
-  //     {
-  //       source: '/',
-  //       destination: '/loginPage',
-  //       permanent: true, // 308 редирект
-  //     },
-  //   ]
-  // },
+  plugins: { "@tailwindcss/postcss": {}, },
 };
 
 export default nextConfig;

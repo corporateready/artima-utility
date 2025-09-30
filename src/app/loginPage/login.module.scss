@@ -1,0 +1,28 @@
+.loginWrapper {
+  @apply w-full h-screen flex flex-col;
+
+  @media screen and (min-width: 640px) {
+    @apply flex flex-row justify-between p-[15rem];
+  }
+}
+
+.loginButton {
+  box-shadow: 0rem 4rem 4rem rgb(174, 174, 174, 0.25);
+
+  @media screen and (min-width: 640px) {
+    @apply w-[436rem] h-auto;
+  }
+}
+
+.loginDesktop {
+  @apply hidden;
+  
+  @media screen and (min-width: 640px) {
+    @apply flex flex-col justify-center items-center w-[795rem] h-full gap-y-[54rem];
+    background-image: url('/header-bg-desktop.png');
+    background-position: center;  
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+}
